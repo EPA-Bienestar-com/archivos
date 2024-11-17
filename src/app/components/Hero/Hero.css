@@ -1,0 +1,88 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #f2f2f2;
+  height: 87vh;
+  border-radius: 10px;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.heroContent p {
+  font-size: 1rem;
+  color: #666;
+  margin: 20px 0;
+}
+
+.start {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffcc5e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0, 0.3);
+  cursor: pointer !important;
+  z-index: 5;
+}
+
+.heroImage {
+  max-width: 50%;
+  z-index: 1;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.stethoImage{
+    position: absolute;
+    top: -90px;
+    left: 0;
+    height: auto;
+    width: 60vw;
+    opacity: 0.9;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+@media (max-width: 768px) {
+  .heroImage img, .stethoImage {
+    display: none;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 0.9rem;
+  }
+
+  .start {
+    font-size: 0.9rem;
+  }
+}

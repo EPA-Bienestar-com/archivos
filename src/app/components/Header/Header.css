@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+}
+
+.logoText {
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+}
+
+.common {
+  color: var(--primary-foreground);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.begin {
+  padding: 10px 20px;
+  background: #ffcc5e;
+  font-size: 1.3rem;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0, 0.3);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .common {
+    display: none;
+  }
+}
